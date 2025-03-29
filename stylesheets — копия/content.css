@@ -1,0 +1,612 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+canvas {
+  display: block;
+  background-color: black;
+}
+
+.h1-section1 {
+  font-family: "LeagueGothic";
+  font-size: 9.53vw;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h2-section1 {
+  font-family: "Aeroport-light";
+  font-size: 1vw;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: 25vw;
+  text-align: center;
+}
+
+.h3-section1 {
+  font-family: "LeagueGothic";
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  top: 3vw;
+  text-decoration: none;
+}
+#left{
+  left: 3vw;
+}
+#right{
+  right: 3vw;
+}
+
+#h3-1-section1 {
+  left: 3.4vw;
+}
+.div-h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.frame-container {
+  position: relative;
+  display: inline-block;
+}
+
+.h2-frame {
+  display: block;
+  width: 24vw;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Druk Wide Cyr";
+  font-size: 1.6vw;
+  color: white;
+  white-space: nowrap;
+}
+#coverr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53vw;
+  margin-top: -12vw;
+}
+
+#car {
+  width: 70vw;
+  max-width: 100%;
+}
+
+h2 {
+  font-family: "Druk Wide Cyr";
+  font-size: 1.6vw;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.h2-frame-sec3 {
+  display: block;
+}
+#frame-size2{
+  width: 16vw;
+}
+#frame-size3{
+  width: 15vw;
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 7vw;
+  padding: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-cover, .main-niva, .main-priora, .main-cosmobaton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 20.9vw;
+}
+
+.p-cards {
+  font-family: "Druk Wide Cyr";
+  font-size: 0.8vw;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5vw;
+  white-space: nowrap;
+}
+
+.cover, .niva, .priora, .cosmobaton {
+  position: relative;
+  width: 21vw;
+  height: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rug, .niva-img, .priora-img, .cosmobaton-img {
+  object-fit: contain;
+  width: 90%;
+  height: 90%;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.cover:hover .rug,
+.niva:hover .niva-img,
+.priora:hover .priora-img,
+.cosmobaton:hover .cosmobaton-img {
+  transform: scale(1.5);
+  z-index: 2;
+}
+
+.frame-sec2-big {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transform-origin: top center;
+  transform: scaleY(0.8);
+  transition: transform 0.3s ease;
+}
+
+.cover:hover .frame-sec2-big,
+.niva:hover .frame-sec2-big,
+.priora:hover .frame-sec2-big,
+.cosmobaton:hover .frame-sec2-big {
+  transform: scaleY(1);
+}
+
+.cover .frame-sec2,
+.niva .frame-sec2,
+.priora .frame-sec2,
+.cosmobaton .frame-sec2 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.checkboxes,
+.checkboxes-niva,
+.checkboxes-priora,
+.checkboxes-cosmobaton {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  z-index: 10;
+  width: 80%;
+  transition: bottom 0.3s ease;
+  opacity: 0;
+}
+
+.checkboxes label,
+.checkboxes-niva label,
+.checkboxes-priora label,
+.checkboxes-cosmobaton label {
+  font-family: "Aeroport-light", sans-serif;
+  color: white;
+  font-size: 0.9vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 90%;
+  padding: 0.3vw 1vw;
+}
+
+.cover:hover .checkboxes,
+.niva:hover .checkboxes-niva,
+.priora:hover .checkboxes-priora,
+.cosmobaton:hover .checkboxes-cosmobaton {
+  bottom: 5%;
+  opacity: 1;
+  top: 20vw;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.universe {
+  position: absolute;
+  width: 41.87vw;
+  left: 28vw;
+  margin-top: 29vw;
+  box-sizing: border-box;
+  padding: 1vw;
+}
+
+.section-3 {
+  position: relative;
+  width:100%;
+  height: 90vw;
+  margin-top: 12vw;
+}
+
+.items {
+  width: 33.95vw;
+  position: absolute;
+  cursor: grab;
+  z-index: 1;
+}
+
+.items:active {
+  cursor: grabbing;
+}
+
+@keyframes blackHoleSuck {
+  0% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(0.5) rotate(180deg);
+      opacity: 0.7;
+  }
+  100% {
+      transform: scale(0.1) rotate(360deg);
+      opacity: 0;
+      left: var(--black-hole-center-x);
+      top: var(--black-hole-center-y);
+  }
+}
+
+.black-hole-suck {
+  animation: blackHoleSuck 0.8s ease-in forwards;
+  pointer-events: none;
+}
+
+#pelmeni {
+  top: 1vw;
+  left: 2vw;
+}
+
+#pivo {
+  top: 10vw;
+  left: 41vw;
+}
+
+#zhiga {
+  top: 10vw;
+  left: 22vw;
+  width: 20vw;
+}
+
+#gift-card {
+  top: 47vw;
+  left: 73vw;
+  width: 27vw;
+}
+
+#havka {
+  top: 12vw;
+  left: 61vw;
+}
+
+#cd2-1 {
+  top: 57vw;
+  left: -3vw;
+  width: 28vw;
+}
+
+#sticker {
+  top: 5vw;
+  left: 77vw;
+}
+
+#vodka {
+  top: 63vw;
+  left: 49vw;
+  width: 27vw;
+}
+
+#pencil {
+  top: 4vw;
+  left: 60vw;
+}
+
+#preserve {
+  top: 26vw;
+  left: -7vw;
+  width: 25vw;
+}
+
+#bita {
+  top: 42vw;
+  left: 6vw;
+  width: 20vw;
+}
+
+#sticker2 {
+  top: 80vw;
+  left: 11vw;
+  width: 18vw;
+}
+
+#box {
+  top: 60vw;
+  left: 19vw;
+}
+
+#dinamit {
+  top: 60vw;
+  left: 28vw;
+  width: 29vw;
+}
+
+#skate {
+  top: 28vw;
+  left: 71vw;
+  width: 29vw;
+}
+
+#tamagochi {
+  top: 52vw;
+  left: 59vw;
+  width: 26vw;
+}
+
+.section-4 {
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+  margin-top: 8vw;
+}
+
+.face {
+  position: absolute;
+  width: 25.97vw;
+  transition: all 0.3s ease-out;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.section-5 {
+  width: 100%;
+}
+
+.agreement {
+  font-family: "Aeroport-light";
+  color: white;
+  font-size: 1vw;
+  margin: 4vw auto 0;
+  text-align: center;
+  width: 95%;
+  max-width: 1200px;
+}
+
+@keyframes word-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes word-disappear {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.word-flicker {
+  animation: word-flicker 1.5s infinite;
+}
+
+.word-disappear {
+  animation: word-disappear 2s infinite;
+}
+
+.section-6 {
+  position: relative;
+  width: 100%;
+  height: 27vw;
+}
+
+.sign {
+  font-family: "Aeroport-light";
+  color: white;
+  font-size: 1vw;
+  margin-top: 2vw;
+  text-align: center;
+}
+
+.drawing-area {
+  position: relative;
+  width: 80vw;
+  height: 27vw;
+  margin: 0 auto;
+  cursor: url('/img/Group-73.svg'), auto;
+}
+
+.brush-image {
+  position: absolute;
+  width: 5vw;
+  height: 3vw;
+  pointer-events: none;
+}
+
+.section-7 {
+  margin-top: 3vw;
+  width: 100%;
+}
+
+.button-container {
+  position: relative;
+  width: 26vw;
+  height: 8vw;
+  margin-left: 50%;
+  margin-top: -1vw;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.button-container:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  background: rgba(225, 225, 225, 0.1);
+  opacity: 0.79;
+  box-shadow: 
+      inset 0px -29px 8.1px -29px rgba(221, 218, 244, 0.25),
+      inset 0px 4px 9.4px rgba(255, 255, 255, 0.31),
+      inset 65.9667px -65.9667px 65.9667px rgba(165, 165, 165, 0.1),
+      inset -65.9667px 65.9667px 65.9667px rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(65.9667px);
+  border-radius: 25px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.blur-light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.79;
+  border: 2px solid #FFFFFF;
+  filter: blur(7.55px);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.button-text {
+  font-family: "LeagueGothic";
+  font-size: 7vw;
+  color: white;
+  margin: 0;
+  z-index: 3;
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background-color: #f00;
+  color: white;
+  margin: 15% auto;
+  padding: 20vw;
+  width: 50%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 1vw;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  right: 2vw;
+  top: 1vw;
+  font-size: 3vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.text-footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 5.5vw;
+}
+
+.h3-footer {
+  font-family: "LeagueGothic";
+  font-size: 2.5vw;
+  color: white;
+}
+
+#h3-1-footer {
+  margin-left: 3vw;
+}
+
+#h3-2-footer {
+  margin-right: 3vw;
+}
+
+.error {
+  font-family: "Druk Wide Cyr";
+  font-size: 6vw;
+  color: white;
+  text-align: center;
+}
+
+#error1 {
+  font-family: "Aeroport-light";
+  font-size: 2.5vw;
+  color: white;
+  margin-top: 4vw;
+}

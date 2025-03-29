@@ -1,0 +1,309 @@
+@media screen and (min-width: 1921px) {
+  
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+}
+
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .h1-section1 {
+      font-size: 19.06vw;
+    }
+    
+    .h2-section1 {
+      font-size: 2vw;
+    }
+    
+    .h3-section1, .h3-footer {
+      font-size: 4vw;
+    }
+    
+    h2 {
+      font-size: 3.2vw;
+    }
+    
+    .p-cards {
+      font-size: 1.6vw;
+    }
+    
+    .agreement, .sign {
+      font-size: 2vw;
+    }
+    
+    .button-text {
+      font-size: 14vw;
+    }
+    
+    .error {
+      font-size: 12vw;
+    }
+    
+    #error1 {
+      font-size: 5vw;
+    }
+  
+    /* Изменение расположения карточек */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      gap: 0;
+      width: 75%;
+      margin: 0 auto;
+    }
+    
+    .main-cover, .main-niva, .main-priora, .main-cosmobaton {
+      width: 100%;
+    }
+    
+    .main-cover {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    
+    .main-niva {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    
+    .main-priora {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    
+    .main-cosmobaton {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    
+    .cover, .niva, .priora, .cosmobaton {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+    }
+    
+    .checkboxes,
+    .checkboxes-niva,
+    .checkboxes-priora,
+    .checkboxes-cosmobaton {
+      width: 90%;
+      font-size: 1.8vw;
+    }
+    
+    /* Другие адаптивные стили */
+    #car {
+      width: 90vw;
+    }
+    
+    .h2-frame {
+      width: 48vw;
+    }
+    
+    .h2-frame-sec3 {
+      width: 20vw;
+    }
+    
+    .button-container {
+      width: 52vw;
+      height: 16vw;
+    }
+    
+    .modal-content {
+      padding: 10vw;
+    }
+    
+    .close {
+      font-size: 6vw;
+    }
+  }
+@media screen and (max-width: 414px) {
+
+}
+.error {
+    font-size: 3.5vw;
+
+  }
+  
+  #error1 {
+        font-size: 2.5vw;
+ 
+    margin-top: 4vw;
+  }
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Большие экраны */
+@media screen and (min-width: 1921px) and (orientation: landscape) {
+    /* Горизонтальная ориентация */
+}
+
+@media screen and (min-width: 1921px) and (orientation: portrait) {
+    /* Вертикальная ориентация */
+}
+
+/* От 1441px до 1920px */
+@media screen and (min-width: 1441px) and (max-width: 1920px) and (orientation: landscape) {
+    /* Горизонтальная ориентация */
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) and (orientation: portrait) {
+    /* Вертикальная ориентация */
+}
+
+/* От 769px до 1440px */
+@media screen and (min-width: 769px) and (max-width: 1440px) and (orientation: landscape) {
+    /* Горизонтальная ориентация */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) and (orientation: portrait) {
+    /* Вертикальная ориентация */
+}
+
+
+/* От 415px до 768px */
+@media screen and (min-width: 415px) and (max-width: 768px) and (orientation: landscape) {
+    /* Горизонтальная ориентация */
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) and (orientation: portrait) {
+    /* Вертикальная ориентация */
+}
+
+/* Максимум 414px */
+@media screen and (max-width: 414px) and (orientation: landscape) {
+    /* Горизонтальная ориентация */
+}
+
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    .h1-section1 {
+        font-size: 19.06vw;
+      }
+      
+      .h2-section1 {
+        font-size: 2vw;
+      }
+      
+      .h3-section1, .h3-footer {
+        font-size: 4vw;
+      }
+      
+      h2 {
+        font-size: 3.2vw;
+      }
+      
+      .p-cards {
+        font-size: 1.6vw;
+      }
+      
+      .agreement, .sign {
+        font-size: 2vw;
+      }
+      
+      .button-text {
+        font-size: 14vw;
+      }
+      
+      .error {
+        font-size: 12vw;
+      }
+      
+      #error1 {
+        font-size: 5vw;
+      }
+    
+      /* Изменение расположения карточек */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 0;
+        width: 75%;
+        margin: 0 auto;
+      }
+      
+      .main-cover, .main-niva, .main-priora, .main-cosmobaton {
+        width: 100%;
+      }
+      
+      .main-cover {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      
+      .main-niva {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      
+      .main-priora {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      
+      .main-cosmobaton {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      
+      .cover, .niva, .priora, .cosmobaton {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+      }
+      
+      .checkboxes,
+      .checkboxes-niva,
+      .checkboxes-priora,
+      .checkboxes-cosmobaton {
+        width: 90%;
+        font-size: 1.8vw;
+      }
+      
+      /* Другие адаптивные стили */
+      #car {
+        width: 90vw;
+      }
+      
+      .h2-frame {
+        width: 48vw;
+      }
+      
+      .h2-frame-sec3 {
+        width: 20vw;
+      }
+      
+      .button-container {
+        width: 52vw;
+        height: 16vw;
+      }
+      
+      .modal-content {
+        padding: 10vw;
+      }
+      
+      .close {
+        font-size: 6vw;
+      }
+    }
+  @media screen and (max-width: 414px) {
+  
+  }
+  .error {
+      font-size: 3.5vw;
+  
+    }
+    
+    #error1 {
+          font-size: 2.5vw;
+   
+      margin-top: 4vw;
+    }
+
+
